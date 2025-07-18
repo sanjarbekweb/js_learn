@@ -44,7 +44,6 @@ for (const todo of todos) {
     liElement.style.opacity = "0.5"
     liElement.style.boxShadow = "none"
   }
-
   ulElement.appendChild(liElement)
-
 }
+
