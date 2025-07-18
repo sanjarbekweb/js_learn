@@ -37,12 +37,17 @@ li {
   display: flex;
   flex-direction: column;
   padding: 12px 20px;
-  border: 1px solid #9929EA;
+    border: 1px solid #9929EA;
   box-shadow: 3px 0 29px 3px rgb(153, 41, 234, .3);
   -webkit-box-shadow: 3px 0 29px 3px rgb(153, 41, 234, .3);
   -moz-box-shadow: 3px 0 29px 3px rgb(153, 41, 234, .3);
 }
 
+.non{
+  text-decoration: line-through;
+  opacity: .5;
+  box-shadow: none;
+}
 .title {
   font-weight: 600;
   position: relative;
