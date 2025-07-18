@@ -39,7 +39,7 @@ for (const todo of todos) {
   titleElement.textContent = todo.title
   bodyElement.textContent = todo.body
 
-  if (!todo.completed) {
+  if (!todo.completed == false) {
     liElement.style.textDecoration = "line-through"
     liElement.style.opacity = "0.5"
     liElement.style.boxShadow = "none"
