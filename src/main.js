@@ -30,8 +30,8 @@ for (const todo of todos) {
   const check = document.createElement("span")
 
   titleElement.className = "title"
-  bodyElement.className = "bodyEl"
-
+  bodyElement.className = todo.completed ? "bodyEl" : "not"
+  bodyElement.classList.toggle
   liElement.appendChild(titleElement)
   liElement.appendChild(bodyElement)
   liElement.appendChild(check)
@@ -39,14 +39,14 @@ for (const todo of todos) {
   titleElement.textContent = todo.title
   bodyElement.textContent = todo.body
 
-  if (!todo.completed == false) {
-    liElement.style.textDecoration = "line-through"
-    liElement.style.opacity = "0.5"
-    liElement.style.boxShadow = "none"
-  }
+  // if (!todo.completed == false) {
+  //   liElement.style.textDecoration = "line-through"
+  //   liElement.style.opacity = "0.5"
+  //   liElement.style.boxShadow = "none"
+  // }
   ulElement.appendChild(liElement)
-  liElement.classList.toggle('non')
 
+  // liElement.classList.toggle('non')
 }
 
 
