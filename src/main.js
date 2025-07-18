@@ -45,5 +45,12 @@ for (const todo of todos) {
     liElement.style.boxShadow = "none"
   }
   ulElement.appendChild(liElement)
+  liElement.addEventListener('click', (e) => {
+    liElement.style.textDecoration = "line-through"
+    liElement.style.opacity = "0.5"
+    liElement.style.boxShadow = "none"
+  })
+
 }
+
 
